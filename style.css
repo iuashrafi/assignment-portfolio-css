@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gagalin");
+@import url("https://fonts.cdnfonts.com/css/breathing-personal-use");
+
+:root {
+  --bg-body: white;
+  --bg-green: #495e57;
+  --bg-yellow: #f4ce14;
+  --bg-white: #ffffff;
+  --fs-gagalin: "Gagalin", sans-serif;
+  --fs-poppins: "Poppins", sans-serif;
+  --linear-gradient: linear-gradient(260deg, #83a297, #708b83);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fs-poppins);
+}
+.bg-white {
+  background-color: white;
+}
+.fs-gagalin {
+  font-family: var(--fs-gagalin);
+}
+.fs-breathing {
+  font-family: "Breathing Personal Use", sans-serif;
+}
+.fs-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.fs-7 {
+  font-size: 7rem;
+}
+.fs-5 {
+  font-size: 5rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+body {
+  background: var(--bg-body);
+}
+/* header  */
+header {
+  background: var(--bg-white);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+.logo-header {
+  height: 50px;
+}
+/* navbar */
+.navbar {
+  background: var(--linear-gradient);
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbar ul li {
+  list-style: none;
+  margin-left: 3rem;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding: 0.6rem;
+  color: var(--bg-white);
+  transition: all 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: var(--bg-yellow);
+  background: var(--bg-green);
+  border-radius: 5px;
+}
+/* Main content*/
+section {
+  display: flex;
+  justify-content: center;
+}
+/* Banner */
+.banner-offer {
+  background: url(/img/banner-min.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  padding: 3rem;
+  width: 70%;
+  border-radius: 1rem;
+}
+.banner-offer p:first-child {
+  font-size: 4rem;
+}
+.banner-offer p:nth-of-type(2) {
+  font-size: 5rem;
+}
+.banner-offer p:nth-of-type(3) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* top selling - card  */
+.top-selling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img {
+  height: 80%;
+  width: 80%;
+  border-radius: 1rem;
+}
+.card-text {
+  width: 80%;
+  padding: 0.8rem;
+}
+/* Menus   */
+.menu-section {
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu-t {
+  padding: 1rem;
+  margin-right: 1rem;
+}
+th,
+td {
+  padding: 0.6rem;
+}
+/* Reviews */
+.reviews {
+  background: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+.review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.review p {
+  padding: 1rem;
+}
+.review-user {
+  height: 120px;
+  width: 120px;
+  background-image: url(../img/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  padding: 4rem;
+}
+/* About us*/
+.about-us {
+  flex-direction: column;
+  background: var(--bg-white);
+  text-align: center;
+  padding: 5rem;
+}
+.about-us p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: var(--fs-poppins);
+  line-height: 1.6rem;
+}
+/* Footer */
+footer {
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+  background: linear-gradient(260deg, #83a297, #708b83);
+  color: var(--bg-yellow);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  padding-left: 1rem;
+}
+.logo-footer {
+  height: 100px;
+}
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  /* Banner */
+  .banner-offer {
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0;
+  }
+  .banner-offer p:first-child {
+    font-size: 2rem;
+  }
+  .banner-offer p:nth-of-type(2) {
+    font-size: 4rem;
+  }
+  .banner-offer p:nth-of-type(3) {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
